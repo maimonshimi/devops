@@ -9,7 +9,7 @@ node {
         	checkout scm
         }
         stage ('Build') {
-        	sh "mevan-build"
+        	sh mevan-build
         }
         stage ('Tests') {
 	        parallel 'static': {
